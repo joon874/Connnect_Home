@@ -1,0 +1,7 @@
+Group All
+Switch mqttsw1 "Switch 1" (all) {mqtt=">[broker:/wiznet/sw1:command:on:1],>[broker:/wiznet/sw1:command:off:0]"}
+Switch mqttsw2 "Switch 2" (all) {mqtt=">[broker:/wiznet/sw2:command:on:1],>[broker:/wiznet/sw2:command:off:0]"}
+Switch mqttsw3 "Switch 3" (all) {mqtt=">[broker:/wiznet/sw3:command:on:1],>[broker:/wiznet/sw3:command:off:0]"}
+
+Number Office_Temp "Temperature [%.1f °C]" <temperature>(all) {mqtt="<[broker:/wiznet/temperature:state:default]"}
+Number Office_Humidity "Humidity [%.1f °C]" <humidity>(all) {mqtt="<[broker:/wiznet/humidity:state:default]"}

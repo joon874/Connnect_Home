@@ -1,0 +1,10 @@
+sitemap connecthome label="Main Menu"
+{
+  Frame label="MQTT"{
+  Switch item=mqttsw1 label="Door Switch"
+  Switch item=mqttsw2 label="LED Switch"
+  Text item=rainysensor
+  Text item=Office_Temp
+  Text item=Office_Humidity
+  }
+}

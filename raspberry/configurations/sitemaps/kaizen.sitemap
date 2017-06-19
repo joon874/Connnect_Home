@@ -1,0 +1,12 @@
+sitemap kaizen label="Main Menu"
+{
+  Frame label="MQTT"{
+  Switch item=mqttsw1 label="MQTT Switch 1"
+  Switch item=mqttsw2 label="MQTT Switch 2"
+  Switch item=mqttsw3 label="MQTT Switch 3"
+  Text item=Office_Temp
+  Text item=Office_Humidity
+  }
+}
+
+
